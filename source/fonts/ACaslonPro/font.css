@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'ACaslonPro-Regular';
+  src: url('ACaslonPro-Regular.woff') format('woff'),
+       url('ACaslonPro-Regular.ttf') format('truetype'),
+       url('ACaslonPro-Regular.svg#ACaslonPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  src: url('Adobe Caslon Pro.eot');
+  src: url('Adobe Caslon Pro.woff2') format('woff2'),
+       url('Adobe Caslon Pro.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

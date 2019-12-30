@@ -1,0 +1,254 @@
+.accordion {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+
+  @media (min-width: 1199px) {
+    max-height: 100vh;
+  }
+
+  @media (max-width: 1200px) {
+    height: 600px;
+  }
+
+  @media (max-width: 991px) {
+    height: 450px;
+  }
+
+  @media (max-width: 767px) {
+    height: 250px;
+  }
+
+  @media (max-width: 400px) {
+    height: 180px;
+  }
+
+  ul {
+    width:100%;
+    display:table;
+    table-layout:fixed;
+    margin:0;
+    padding:0;
+
+    li {
+      display:table-cell;
+      vertical-align:bottom;
+      position: relative;
+      width:25%; // 4 into 100
+      height: 800px;
+      transition:all 400ms ease;
+
+      @media (max-width: 1200px) {
+        height: 600px;
+      }
+
+      @media (max-width: 991px) {
+        height: 450px;
+      }
+
+      @media (max-width: 767px) {
+        height: 250px;
+      }
+
+      @media (max-width: 400px) {
+        height: 180px;
+      }
+
+      div {
+        display:block;
+        overflow:hidden;
+        width:100%;
+
+        .accordion-inside {
+          display: block;
+          height: 800px;
+          width: 100%;
+          position: relative;
+          z-index: 3;
+          padding: 15px 20px;
+          box-sizing: border-box;
+          transition: all 200ms ease;
+
+          @media (max-width: 1200px) {
+            height: 600px;
+          }
+
+          @media (max-width: 991px) {
+            height: 450px;
+          }
+
+          @media (max-width: 767px) {
+            height: 250px;
+          }
+
+          @media (max-width: 400px) {
+            height: 180px;
+          }
+
+          * {
+            margin:0;
+            width:100%;
+            position:relative;
+            z-index:5;
+            white-space:nowrap;
+            -webkit-transition:all 300ms ease;
+            transition:all 300ms ease;
+            text-shadow: 1px 1px 2px black;
+          }
+        }
+      }
+    }
+
+    .accordion-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat:no-repeat;
+      background-position:center center;
+      background-size: cover;
+      transition:all 400ms ease;
+
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      //-ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      //filter: gray; /* IE 6-9 */
+
+
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        z-index: 2;
+        opacity: .5;
+      }
+    }
+
+    &:hover li {
+      width:23%;
+    }
+
+    &:hover li:hover {
+      width:31%;
+
+      .accordion-bg {
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        //-ms-filter: grayscale(0);
+        -o-filter: grayscale(0);
+        filter: grayscale(0);
+        //filter: gray; /* IE 6-9 */
+      }
+    }
+  }
+
+  &-title {
+    text-overflow: clip;
+    margin-bottom: 2px;
+    top: 350px;
+    color: $white;
+    font: 300 2.8rem $adobe_casl;
+    position: relative;
+
+    @media (max-width: 1200px) {
+      top: 250px;
+    }
+
+    @media (max-width: 991px) {
+      top: 170px;
+      font: 400 2.6rem $adobe_casl;
+    }
+
+    @media (max-width: 767px) {
+      top: 50px;
+      font: 400 2.4rem $adobe_casl;
+    }
+
+    @media (max-width: 400px) {
+      top: 30px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 100px;
+      height: 2px;
+      background-color: $brown;
+      position: absolute;
+      top: -3.3rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 20;
+
+      @media (max-width: 1200px) {
+        top: -2rem;
+      }
+
+      @media (max-width: 767px) {
+        top: -1rem;
+      }
+    }
+  }
+
+  &-link {
+    top: 380px;
+    font: .9rem $open-sans;
+    padding: 1rem 2rem;
+    width: auto!important;
+    transition: all 0.5s;
+
+    @media (max-width: 1200px) {
+      top: 280px;
+    }
+
+    @media (max-width: 991px) {
+      top: 200px;
+    }
+
+    @media (max-width: 767px) {
+      top: 75px;
+    }
+
+    @media (max-width: 400px) {
+      top: 40px;
+    }
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+// Stack items
+@media screen and (max-width: 767px) {
+
+  // IE gets fussy if this isn't here
+  body { margin:0; }
+
+  .accordion {
+    height: auto;
+
+    ul,ul:hover {
+
+      li,li:hover {
+        position: relative;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+
+        -webkit-transition: none;
+        transition: none;
+      }
+    }
+  }
+}

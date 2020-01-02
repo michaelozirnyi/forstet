@@ -1,31 +1,46 @@
+//sizes
+$wrapper-width: 1180px;
 
+//colors
 $white: #fff;
-$light-gray: #f3f3f3;
-$gray: #3b3c3c;
-$dark-gray: #3a3b3b;
-$footer-black: #0e0e0e;
-$black: #000;
-$light-brown: #cb6522;
-$brown: #bc6123;
+$bright-green: #53f20e;
+$oxford-blue: #3e4c5b;
+$gull-gray: #9aa8b6;
+$lily: #b69ab2;
+$desert-storm: #f8f8f6;
+$alto: #D4D4D4;
+
+//fonts
+$nunito: 'Nunito Sans', sans-serif;
 
 
-$open-sans: 'Open Sans', sans-serif;
-$adobe_casl: 'Adobe Caslon Pro', 'ACaslonPro-Regular';
-
-@font-face {
-  font-family: $adobe_casl;
-  src: url('../../fonts/ACaslonPro/Adobe Caslon Pro.eot');
-  src: url('../../fonts/ACaslonPro/Adobe Caslon Pro.woff2') format('woff2'),
-  url('../../fonts/ACaslonPro/Adobe Caslon Pro.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: $adobe_casl;
-  src: url('../../fonts/ACaslonPro/ACaslonPro-Regular.woff') format('woff'),
-  url('../../fonts/ACaslonPro/ACaslonPro-Regular.ttf') format('truetype'),
-  url('../../fonts/ACaslonPro/ACaslonPro-Regular.svg#ACaslonPro-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+//$white: #fff;
+//$light-gray: #f3f3f3;
+//$gray: #3b3c3c;
+//$dark-gray: #3a3b3b;
+//$footer-black: #0e0e0e;
+//$black: #000;
+//$light-brown: #cb6522;
+//$brown: #bc6123;
+//
+//
+//$open-sans: 'Open Sans', sans-serif;
+//$adobe_casl: 'Adobe Caslon Pro', 'ACaslonPro-Regular';
+//
+//@font-face {
+//  font-family: $adobe_casl;
+//  src: url('../../fonts/ACaslonPro/Adobe Caslon Pro.eot');
+//  src: url('../../fonts/ACaslonPro/Adobe Caslon Pro.woff2') format('woff2'),
+//  url('../../fonts/ACaslonPro/Adobe Caslon Pro.eot?#iefix') format('embedded-opentype');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: $adobe_casl;
+//  src: url('../../fonts/ACaslonPro/ACaslonPro-Regular.woff') format('woff'),
+//  url('../../fonts/ACaslonPro/ACaslonPro-Regular.ttf') format('truetype'),
+//  url('../../fonts/ACaslonPro/ACaslonPro-Regular.svg#ACaslonPro-Regular') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}

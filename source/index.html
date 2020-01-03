@@ -9,7 +9,7 @@
     <title>FORSTET</title>
 
     <!--  Google font  -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700|Roboto:400,900&display=swap" rel="stylesheet">
     <!--  Font-awesome  -->
     <link href="./../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!--  Bootstrap  -->
@@ -21,55 +21,81 @@
 <!--  Header  -->
 
 <section class="welcome-section">
-    <div class="wrapper">
+    <div class="container">
         <header class="header d-flex justify-content-between ">
-            <a href="#" class="logo">
-                <img src="./images/logos/header-logo.svg" alt="logo">
-            </a>
-            <nav class="d-flex align-items-start menu">
-                <ul class="d-flex menu-items">
-                    <li class="menu-item">
-                        <a href="#">HOME</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Aktionstage</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Förster & Waldbesitzer</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">ÜBER UNS</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">FAQ</a>
-                    </li>
-                </ul>
-                <div class="d-flex menu-social">
-                    <a class="instagram" href="#"></a>
-                    <a class="linkedin" href="#"></a>
-                    <a class="twitter" href="#"></a>
-                </div>
-            </nav>
+          <a href="#" class="logo">
+            <img src="./images/logos/header-logo.svg" alt="logo">
+          </a>
+
+          <div class="navigation navbar-expand-lg">
+            <button type="button" class="navbar-toggler hamburger hamburger--squeeze" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class="hamburger-top-line"></span>
+              <span class="hamburger-mid-line"></span>
+              <span class="hamburger-bot-line"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="d-flex menu-items m-0 p-0">
+                <li class="menu-item active">
+                  <a href="#">HOME</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Aktionstage</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Förster & Waldbesitzer</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">ÜBER UNS</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">FAQ</a>
+                </li>
+              </ul>
+
+              <div class="d-flex menu-social">
+                <a class="instagram" href="#"></a>
+                <a class="linkedin" href="#"></a>
+                <a class="twitter" href="#"></a>
+              </div>
+            </div>
+          </div>
         </header>
-        <div class="welcome-container d-flex flex-column align-items-end">
+
+
+
+
+
+
+
+
+
+
+
+        <div class="welcome-container d-flex flex-column">
             <h1 class="welcome-title">DEUTSCHLAND <span>FORSTET</span> AUF</h1>
             <div class="welcome-content">
                 <span>Deutschlands grüne Lunge - Wie unsere Wälder dem Klimawandel trotzen können.</span> Hier entsteht
                 in Zusammenarbeit mit dem Bund Deutscher Forstleute und privaten Waldeigentümern eine Plattform für 
                 Freiwillige.
             </div>
-            <a class="welcome-link" href="#">ERFAHRE MEHR</a>
+            <a class="welcome-link" href="#">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              <span class="text">
+                Erfahre mehr
+              </span>
+            </a>
         </div>
         <div class="d-flex search-container">
             <ul class="d-flex points">
                 <li class="point">
-                    LOREM IPSUM DOLOR SIT AMET, CONSETETUR
+                  Lorem ipsum dolor sit amet, consectetur
                 </li>
                 <li class="point">
-                    LOREM IPSUM DOLOR SIT AMET, CONSETETUR
+                  Lorem ipsum dolor sit amet, consectetur
                 </li>
                 <li class="point">
-                    LOREM IPSUM DOLOR SIT AMET, CONSETETUR
+                  Lorem ipsum dolor sit amet, consectetur
                 </li>
             </ul>
         </div>

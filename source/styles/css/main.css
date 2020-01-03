@@ -1,3 +1,205 @@
+.welcome-section {
+  background: url("../../images/bg/home-bg.jpg") center center no-repeat;
+  background-size: cover; }
+  .welcome-section > .container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    min-height: 100vh; }
+  .welcome-section .header {
+    padding-top: 35px; }
+    @media (max-width: 991px) {
+      .welcome-section .header {
+        padding-top: 15px; } }
+    .welcome-section .header .logo {
+      position: relative;
+      z-index: 1; }
+    @media (max-width: 991px) {
+      .welcome-section .header .menu-items {
+        flex-wrap: wrap;
+        justify-content: center; } }
+    .welcome-section .header .menu-item {
+      margin-right: 2px; }
+      @media (max-width: 991px) {
+        .welcome-section .header .menu-item {
+          text-align: center;
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 10px; } }
+      .welcome-section .header .menu-item a {
+        display: inline-block;
+        padding: 6px 10px;
+        text-transform: uppercase;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        border-bottom: 3px solid transparent;
+        cursor: pointer; }
+        @media (max-width: 991px) {
+          .welcome-section .header .menu-item a {
+            border-width: 2px;
+            padding: 3px 10px; } }
+        .welcome-section .header .menu-item a:hover {
+          border-color: #53f20e; }
+      .welcome-section .header .menu-item.active a {
+        border-color: #53f20e; }
+    .welcome-section .header .menu-social {
+      padding: 10px 5px;
+      margin-left: 50px; }
+      .welcome-section .header .menu-social .instagram,
+      .welcome-section .header .menu-social .linkedin,
+      .welcome-section .header .menu-social .twitter {
+        width: 27px;
+        height: 27px;
+        background-size: 90px !important; }
+      .welcome-section .header .menu-social .instagram {
+        background: url("../../images/photos/social-icon.svg") 0 0 no-repeat; }
+      .welcome-section .header .menu-social .linkedin {
+        margin: 0 10px;
+        background: url("../../images/photos/social-icon.svg") -30px 0 no-repeat; }
+      .welcome-section .header .menu-social .twitter {
+        background: url("../../images/photos/social-icon.svg") -63px 0 no-repeat; }
+  .welcome-section .welcome-container {
+    padding: 30px 0;
+    align-items: flex-end; }
+    @media (max-width: 991px) {
+      .welcome-section .welcome-container {
+        padding: 20px 0; } }
+    @media (max-width: 767px) {
+      .welcome-section .welcome-container {
+        align-items: center; } }
+    .welcome-section .welcome-container .welcome-title {
+      max-width: 710px;
+      text-transform: uppercase;
+      text-align: right;
+      color: #fff; }
+      @media (max-width: 767px) {
+        .welcome-section .welcome-container .welcome-title {
+          text-align: center; } }
+      .welcome-section .welcome-container .welcome-title > * {
+        color: #53f20e; }
+    .welcome-section .welcome-container .welcome-content {
+      max-width: 750px;
+      margin-bottom: 70px;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 20px;
+      text-align: right;
+      color: #fff; }
+      @media (max-width: 767px) {
+        .welcome-section .welcome-container .welcome-content {
+          text-align: center; } }
+      .welcome-section .welcome-container .welcome-content > * {
+        font-weight: bold; }
+    .welcome-section .welcome-container .welcome-link {
+      text-transform: uppercase;
+      position: relative;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: right;
+      color: #fff; }
+      .welcome-section .welcome-container .welcome-link::before {
+        content: '\f101';
+        font-family: FontAwesome;
+        position: absolute;
+        top: -17px;
+        left: 0;
+        font-size: 40px; }
+  .welcome-section .navbar-collapse {
+    justify-content: flex-end; }
+    @media (max-width: 991px) {
+      .welcome-section .navbar-collapse {
+        left: 0;
+        width: 100%;
+        background: #3e4c5b;
+        display: block;
+        position: absolute !important;
+        min-width: 100vw;
+        height: auto;
+        top: -110%;
+        overflow: auto;
+        max-height: 100vh !important;
+        opacity: 0;
+        transition: .2s;
+        padding: 105px 15px 5px; }
+        .welcome-section .navbar-collapse.show {
+          opacity: 1 !important;
+          top: 0 !important;
+          border-bottom: 1px solid #e1e1e1; } }
+  .welcome-section .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .welcome-section .navigation .navbar-toggler {
+      position: relative;
+      left: 0;
+      outline: none;
+      z-index: 101;
+      width: 32px;
+      height: 18px;
+      background-color: transparent;
+      border: none;
+      transition: .3s;
+      cursor: pointer; }
+      .welcome-section .navigation .navbar-toggler .hamburger-top-line, .welcome-section .navigation .navbar-toggler .hamburger-mid-line, .welcome-section .navigation .navbar-toggler .hamburger-bot-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #53f20e;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .3s; }
+      .welcome-section .navigation .navbar-toggler .hamburger-mid-line {
+        top: 8px;
+        left: 0; }
+      .welcome-section .navigation .navbar-toggler .hamburger-bot-line {
+        top: auto;
+        bottom: 0; }
+      .welcome-section .navigation .navbar-toggler:hover .hamburger-mid-line {
+        left: 9px; }
+      .welcome-section .navigation .navbar-toggler:hover .hamburger-bot-line {
+        left: -4px; }
+      .welcome-section .navigation .navbar-toggler[aria-expanded="true"] .hamburger-top-line, .welcome-section .navigation .navbar-toggler[aria-expanded="true"] .hamburger-mid-line, .welcome-section .navigation .navbar-toggler[aria-expanded="true"] .hamburger-bot-line {
+        transform: rotate(45deg);
+        top: 8px; }
+      .welcome-section .navigation .navbar-toggler[aria-expanded="true"] .hamburger-mid-line {
+        background-color: transparent;
+        transform: none; }
+      .welcome-section .navigation .navbar-toggler[aria-expanded="true"] .hamburger-bot-line {
+        transform: rotate(-45deg);
+        left: 0;
+        top: 8px; }
+  .welcome-section .search-container {
+    padding-bottom: 28px; }
+    .welcome-section .search-container .point {
+      position: relative;
+      margin-right: 20px;
+      max-width: 249px;
+      padding: 10px 10px 10px 50px;
+      text-transform: uppercase;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      color: #fff;
+      background-color: rgba(62, 76, 91, 0.6); }
+      .welcome-section .search-container .point:before {
+        content: url("../../images/photos/mount-icon.svg");
+        position: absolute;
+        top: 13px;
+        left: 10px;
+        width: 28px;
+        height: 28px; }
+      .welcome-section .search-container .point::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        border: 1px solid #fff;
+        height: 33px;
+        top: 65px;
+        left: 0; }
+
 .footer {
   background-color: #f8f8f6;
   padding: 55px 0 10px;
@@ -41,109 +243,6 @@
   background: url("../../images/bg/forest-s.png") center center repeat-x;
   background-size: contain;
   height: 240px; }
-
-.welcome-section {
-  background: url("../../images/bg/home-bg.png") center center no-repeat;
-  background-size: cover; }
-  .welcome-section .wrapper {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    min-height: 100vh; }
-  .welcome-section .header {
-    padding-top: 37px; }
-    .welcome-section .header .menu-item {
-      padding: 10px;
-      align-items: flex-start;
-      cursor: pointer; }
-      .welcome-section .header .menu-item a {
-        text-transform: uppercase;
-        font-family: "Nunito Sans", sans-serif;
-        font-size: 16px;
-        font-weight: bold;
-        color: #fff; }
-    .welcome-section .header .menu-item:hover {
-      border-bottom: 4px solid #53f20e; }
-    .welcome-section .header .menu-social {
-      padding: 10px 5px;
-      margin-left: 50px; }
-      .welcome-section .header .menu-social .instagram,
-      .welcome-section .header .menu-social .linkedin,
-      .welcome-section .header .menu-social .twitter {
-        width: 27px;
-        height: 27px;
-        background-size: 90px !important; }
-      .welcome-section .header .menu-social .instagram {
-        background: url("../../images/photos/social-icon.svg") 0 0 no-repeat; }
-      .welcome-section .header .menu-social .linkedin {
-        margin: 0 10px;
-        background: url("../../images/photos/social-icon.svg") -30px 0 no-repeat; }
-      .welcome-section .header .menu-social .twitter {
-        background: url("../../images/photos/social-icon.svg") -63px 0 no-repeat; }
-  .welcome-section .welcome-container {
-    padding: 30px 0; }
-    .welcome-section .welcome-container .welcome-title {
-      max-width: 710px;
-      text-transform: uppercase;
-      font-size: 90px;
-      font-weight: bold;
-      text-align: right;
-      color: #fff; }
-      .welcome-section .welcome-container .welcome-title > * {
-        color: #53f20e; }
-    .welcome-section .welcome-container .welcome-content {
-      max-width: 750px;
-      margin-bottom: 70px;
-      font-family: "Nunito Sans", sans-serif;
-      font-size: 20px;
-      text-align: right;
-      color: #fff; }
-      .welcome-section .welcome-container .welcome-content > * {
-        font-weight: bold; }
-    .welcome-section .welcome-container .welcome-link {
-      text-transform: uppercase;
-      text-decoration: underline;
-      padding-left: 40px;
-      position: relative;
-      font-family: "Nunito Sans", sans-serif;
-      font-size: 20px;
-      font-weight: bold;
-      text-align: right;
-      color: #fff; }
-    .welcome-section .welcome-container .welcome-link::before {
-      content: '\f101';
-      font-family: FontAwesome;
-      position: absolute;
-      top: -17px;
-      left: 0;
-      font-size: 40px; }
-  .welcome-section .search-container {
-    padding-bottom: 28px; }
-    .welcome-section .search-container .point {
-      position: relative;
-      margin-right: 20px;
-      max-width: 249px;
-      padding: 10px 10px 10px 50px;
-      text-transform: uppercase;
-      font-family: "Nunito Sans", sans-serif;
-      font-size: 14px;
-      color: #fff;
-      background-color: rgba(62, 76, 91, 0.6); }
-    .welcome-section .search-container .point::before {
-      position: absolute;
-      content: url("../../images/photos/mount-icon.svg");
-      top: 13px;
-      left: 10px;
-      width: 28px;
-      height: 28px; }
-    .welcome-section .search-container .point::after {
-      position: absolute;
-      content: '';
-      width: 1px;
-      border: 1px solid #fff;
-      height: 33px;
-      top: 65px;
-      left: 0; }
 
 .video-section {
   padding: 125px 0 60px; }
@@ -318,13 +417,37 @@ html {
   font-size: 10px; }
   html body {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif; }
+
+h1 {
+  font-size: 90px;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900; }
+  @media (max-width: 991px) {
+    h1 {
+      font-size: 70px; } }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 55px; } }
+  @media (max-width: 575px) {
+    h1 {
+      font-size: 40px; } }
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900; }
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900; }
 
 a:hover {
   text-decoration: none; }
 
-ul li {
-  list-style-type: none; }
+ul {
+  list-style: none; }
 
 .mb-0 {
   margin-bottom: 0 !important; }
@@ -340,3 +463,11 @@ ul li {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px; }
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1180px !important; } }

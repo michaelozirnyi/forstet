@@ -77,14 +77,72 @@
 </section>
 <!-- Main -->
 
-<section class="locations-section">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4325424.60531306!2d10.030653340076718!3d50.98596187310556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1577953213027!5m2!1sen!2sua"
-            width="100%"
-            height="690"
-            frameborder="0"
-            style="border:0;"
-            allowfullscreen="">
-    </iframe>
+<section class="locations-section container-fluid">
+    <div class="row">
+        <div class="location-container col-lg-8">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4325424.60531306!2d10.030653340076718!3d50.98596187310556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1577953213027!5m2!1sen!2sua"
+                    width="100%"
+                    height="690"
+                    frameborder="0"
+                    style="border:0;"
+                    allowfullscreen="">
+            </iframe>
+        </div>
+        <div class="location-description col-lg-4">
+            <div class="specs">
+                <div class="d-flex justify-content-between">
+                    <div class="search-box">
+                        <h4 class="specs-title">Actionstag suchen</h4>
+                        <form>
+                            <label for="site-search"></label>
+                            <input type="search"
+                                   id="site-search"
+                                   name="q"
+                                   placeholder="PLZ eingeben"
+                                   aria-label="Search through site content">
+                            <button>Search</button>
+                        </form>
+                    </div>
+                    <div class="sort-box">
+                        <h4 class="specs-title">Sortieren</h4>
+                        <div class="specs-actions d-flex">
+                            <button class="d-flex flex-column">
+                                <span>123</span>
+                                Entfernung
+                            </button>
+                            <button class="d-flex flex-column">
+                                <span>123</span>
+                                Datum
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="address-items">
+                    <li class="address-item">
+                        <span>A</span>
+                        <div class="d-flex flex-column">
+                            <b>82223 Eichenau (0,1 km entfernt)</b>
+                            <span>05. Marz 2020 um 11:00 Uhr, noch 22 Platze frei, 500 Baume</span>
+                        </div>
+                    </li>
+                    <li class="address-item">
+                        <span>B</span>
+                        <div class="d-flex flex-column">
+                            <b>82140 Olching (4,1 km entfernt)</b>
+                            <span>09. Marz 2020 um 15:00 Uhr, noch 9 Platze frei, 250 Baume</span>
+                        </div>
+                    </li>
+                    <li class="address-item">
+                        <span>C</span>
+                        <div class="d-flex flex-column">
+                            <b>82216 Maisach (7,2 km entfernt)</b>
+                            <span>16. Marz 2020 um 12:00 Uhr, noch 2 Platze frei, 120 Baume</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="video-section">
@@ -334,9 +392,9 @@
                 <a class="footer-link" href="mailto: info@dfa.de">info@dfa.de</a>
             </li>
             <li class="footer-social col-lg-2 d-flex">
-                <a href="#">instagram</a>
-                <a href="#">linkedin</a>
-                <a href="#">twitter</a>
+                <a class="instagram" href="#"></a>
+                <a class="linkedin" href="#"></a>
+                <a class="twitter" href="#"></a>
             </li>
         </ul>
     </div>

@@ -26,6 +26,23 @@
     .footer-item .footer-link:last-child {
       margin-bottom: 0; }
 
+.footer-social .instagram,
+.footer-social .linkedin,
+.footer-social .twitter {
+  width: 27px;
+  height: 27px;
+  background-size: 90px !important; }
+
+.footer-social .instagram {
+  background: url("../../images/photos/social-icon-dark.svg") 0 0 no-repeat; }
+
+.footer-social .linkedin {
+  margin: 0 10px;
+  background: url("../../images/photos/social-icon-dark.svg") -30px 0 no-repeat; }
+
+.footer-social .twitter {
+  background: url("../../images/photos/social-icon-dark.svg") -63px 0 no-repeat; }
+
 .section-title {
   text-transform: uppercase;
   font-size: 50px;

@@ -65,7 +65,7 @@
     }
 
     .menu-social {
-      padding: 10px 5px;
+      padding: 5px 5px 10px;
       margin-left: 50px;
 
       @media (max-width: 991px) {
@@ -83,14 +83,10 @@
         background-size: 99px !important;
         background-color: transparent;
         -webkit-transition: background .2s;
-        transition: background .2s;
+        transition: background-color .2s;
 
         &:hover {
           background-color: $gull-gray;
-
-          @media (max-width: 991px) {
-            background-color: $bright-green;
-          }
         }
       }
 

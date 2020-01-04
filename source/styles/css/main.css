@@ -252,14 +252,77 @@
   color: #3e4c5b; }
 
 .forest-xl-bg {
-  background: url("../../images/bg/forest-xl.png") center center repeat-x;
+  background: url("../../images/bg/forest-xl.jpg") center center repeat-x;
   background-size: contain;
-  height: 663px; }
+  height: 663px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .forest-xl-bg > * {
+    color: #fff;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: normal;
+    font-weight: bold; }
 
 .forest-s-bg {
   background: url("../../images/bg/forest-s.png") center center repeat-x;
   background-size: contain;
   height: 240px; }
+
+.locations-section .location-description {
+  background-color: #7A7A7A;
+  padding: 20px; }
+  .locations-section .location-description .specs {
+    max-width: 600px;
+    width: 100%; }
+    .locations-section .location-description .specs .specs-title {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff; }
+    .locations-section .location-description .specs .search-box form {
+      display: flex; }
+    .locations-section .location-description .specs .search-box input {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 16px;
+      color: #fff;
+      background-color: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid #fff; }
+    .locations-section .location-description .specs .search-box input::placeholder {
+      color: #fff; }
+    .locations-section .location-description .specs .search-box button {
+      border: none;
+      background: url("../../images/photos/search-icon.svg") center center no-repeat;
+      width: 60px;
+      height: 35px; }
+    .locations-section .location-description .specs .sort-box .specs-actions button {
+      border: none;
+      background: transparent;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 18px;
+      color: #fff; }
+      .locations-section .location-description .specs .sort-box .specs-actions button .calendar {
+        content: '\f073';
+        font-family: FontAwesome;
+        font-size: 25px; }
+    .locations-section .location-description .specs .address-items {
+      padding: 0;
+      margin: 40px 0 0; }
+      .locations-section .location-description .specs .address-items .address-item {
+        position: relative;
+        padding: 15px 0 15px 40px;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 18px;
+        color: #fff;
+        border-bottom: 1px solid #fff; }
+        .locations-section .location-description .specs .address-items .address-item > span {
+          position: absolute;
+          left: 0;
+          top: 15px; }
 
 .video-section {
   padding: 125px 0 60px; }
@@ -468,6 +531,9 @@ ul {
 
 .mb-0 {
   margin-bottom: 0 !important; }
+
+.p-0 {
+  padding: 0 !important; }
 
 .pb-0 {
   padding-bottom: 0 !important; }

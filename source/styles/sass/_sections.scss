@@ -8,9 +8,20 @@
 }
 
 .forest-xl-bg {
-  background: url("../../images/bg/forest-xl.png") center center repeat-x;
+  background: url("../../images/bg/forest-xl.jpg") center center repeat-x;
   background-size: contain;
   height: 663px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > * {
+    color: $white;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: normal;
+    font-weight: bold;
+  }
 }
 
 .forest-s-bg {
@@ -19,7 +30,90 @@
   height: 240px;
 }
 
+.locations-section {
+  .location-description {
+    background-color: $boulder;
+    padding: 20px;
 
+    .specs {
+      max-width: 600px;
+      width: 100%;
+
+      .specs-title {
+        font-family: $nunito;
+        font-size: 22px;
+        font-weight: bold;
+        color: $white;
+      }
+
+      .search-box {
+        form {
+          display: flex;
+        }
+
+        input {
+          font-family: $nunito;
+          font-size: 16px;
+          color: $white;
+          background-color: transparent;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 1px solid $white;
+        }
+
+        input::placeholder {
+          color: $white;
+        }
+
+        button {
+          border: none;
+          background: url("../../images/photos/search-icon.svg") center center no-repeat;
+          width: 60px;
+          height: 35px;
+        }
+      }
+
+      .sort-box {
+        .specs-actions {
+          button {
+            border: none;
+            background: transparent;
+            font-family: $nunito;
+            font-size: 18px;
+            color: $white;
+
+            .calendar {
+              content: '\f073';
+              font-family: FontAwesome;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+
+      .address-items {
+        padding: 0;
+        margin: 40px 0 0;
+
+        .address-item {
+          position: relative;
+          padding: 15px 0 15px 40px;
+          font-family: $nunito;
+          font-size: 18px;
+          color: $white;
+          border-bottom: 1px solid $white;
+
+          & > span {
+            position: absolute;
+            left: 0;
+            top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
 
 .video-section {
   padding: 125px 0 60px;
@@ -260,4 +354,3 @@
     }
   }
 }
-

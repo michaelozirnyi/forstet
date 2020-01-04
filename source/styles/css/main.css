@@ -45,34 +45,21 @@
       .welcome-section .header .menu-item.active a {
         border-color: #53f20e; }
     .welcome-section .header .menu-social {
-      padding: 5px 5px 10px;
+      padding: 10px 5px;
       margin-left: 50px; }
-      @media (max-width: 991px) {
-        .welcome-section .header .menu-social {
-          margin: 30px auto 10px;
-          justify-content: center;
-          transform: scale(1.2);
-          width: 210px; } }
       .welcome-section .header .menu-social .instagram,
       .welcome-section .header .menu-social .linkedin,
       .welcome-section .header .menu-social .twitter {
-        width: 26px;
-        height: 26px;
-        background-size: 99px !important;
-        background-color: transparent;
-        -webkit-transition: background .2s;
-        transition: background-color .2s; }
-        .welcome-section .header .menu-social .instagram:hover,
-        .welcome-section .header .menu-social .linkedin:hover,
-        .welcome-section .header .menu-social .twitter:hover {
-          background-color: #9aa8b6; }
+        width: 27px;
+        height: 27px;
+        background-size: 90px !important; }
       .welcome-section .header .menu-social .instagram {
         background: url("../../images/photos/social-icon.svg") 0 0 no-repeat; }
       .welcome-section .header .menu-social .linkedin {
         margin: 0 10px;
-        background: url("../../images/photos/social-icon.svg") -35px 0 no-repeat; }
+        background: url("../../images/photos/social-icon.svg") -30px 0 no-repeat; }
       .welcome-section .header .menu-social .twitter {
-        background: url("../../images/photos/social-icon.svg") -73px 0 no-repeat; }
+        background: url("../../images/photos/social-icon.svg") -63px 0 no-repeat; }
   .welcome-section .welcome-container {
     padding: 30px 0;
     align-items: flex-end; }
@@ -111,32 +98,14 @@
       font-size: 20px;
       font-weight: bold;
       text-align: right;
-      line-height: 1;
-      color: #fff;
-      display: inline-flex;
-      align-items: center;
-      align-content: center; }
-      .welcome-section .welcome-container .welcome-link i {
-        font-size: 40px;
-        margin-right: 10px;
-        line-height: 10px;
-        margin-top: -5px; }
-      .welcome-section .welcome-container .welcome-link .text {
-        position: relative; }
-        .welcome-section .welcome-container .welcome-link .text:after {
-          content: '';
-          display: inline-block;
-          width: 100%;
-          height: 1px;
-          background-color: #fff;
-          position: absolute;
-          top: auto;
-          bottom: 0;
-          left: 0; }
-      .welcome-section .welcome-container .welcome-link:hover {
-        color: #53f20e; }
-        .welcome-section .welcome-container .welcome-link:hover .text:after {
-          background-color: #53f20e; }
+      color: #fff; }
+      .welcome-section .welcome-container .welcome-link::before {
+        content: '\f101';
+        font-family: FontAwesome;
+        position: absolute;
+        top: -17px;
+        left: 0;
+        font-size: 40px; }
   .welcome-section .navbar-collapse {
     justify-content: flex-end; }
     @media (max-width: 991px) {
@@ -205,151 +174,76 @@
         top: 8px; }
   .welcome-section .search-container {
     padding-bottom: 28px; }
-    @media (max-width: 767px) {
-      .welcome-section .search-container {
-        width: 100%;
-        padding: 0; } }
-    @media (max-width: 991px) {
-      .welcome-section .search-container .points {
-        padding: 0; } }
-    @media (max-width: 767px) {
-      .welcome-section .search-container .points {
-        flex-wrap: wrap;
-        margin: 0; } }
-    .welcome-section .search-container .point button {
-      border-radius: 0;
-      border: none;
+    .welcome-section .search-container .point {
       position: relative;
       margin-right: 20px;
-      max-width: 250px;
+      max-width: 249px;
       padding: 10px 10px 10px 50px;
       text-transform: uppercase;
       font-family: "Nunito Sans", sans-serif;
       font-size: 14px;
-      line-height: 1.4;
       color: #fff;
-      background-color: rgba(62, 76, 91, 0.6);
-      text-align: left;
-      transition: background .2s; }
-      @media (max-width: 767px) {
-        .welcome-section .search-container .point button {
-          max-width: unset;
-          margin-bottom: 10px;
-          margin-right: 0; } }
-      .welcome-section .search-container .point button:before {
+      background-color: rgba(62, 76, 91, 0.6); }
+      .welcome-section .search-container .point:before {
         content: url("../../images/photos/mount-icon.svg");
         position: absolute;
-        top: 50%;
+        top: 13px;
         left: 10px;
         width: 28px;
-        height: 28px;
-        transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%); }
-      .welcome-section .search-container .point button::after {
+        height: 28px; }
+      .welcome-section .search-container .point::after {
         content: '';
         position: absolute;
-        display: inline-block;
         width: 1px;
-        border-left: 1px solid #fff;
+        border: 1px solid #fff;
         height: 33px;
-        top: auto;
-        bottom: -38px;
-        left: 0;
-        outline: none; }
-        @media (max-width: 767px) {
-          .welcome-section .search-container .point button::after {
-            bottom: -10px;
-            height: 10px; } }
-      .welcome-section .search-container .point button:hover {
-        background-color: #3e4c5b; }
+        top: 65px;
+        left: 0; }
 
 .footer {
   background-color: #f8f8f6;
-  padding: 305px 0 10px;
-  margin: 0 auto;
-  position: relative; }
-  @media (max-width: 991px) {
-    .footer {
-      padding: 265px 0 10px; } }
-  @media (max-width: 767px) {
-    .footer {
-      padding: 225px 0 10px; } }
-  .footer:before {
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 250px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url("../../images/bg/forest-s.png") center center repeat-x;
-    background-size: contain; }
-    @media (max-width: 991px) {
-      .footer:before {
-        height: 210px; } }
-    @media (max-width: 767px) {
-      .footer:before {
-        height: 170px; } }
-  .footer-items {
-    padding: 0; }
-  .footer-item {
-    display: flex;
-    flex-direction: column;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 14px;
-    line-height: normal;
-    letter-spacing: 0.33px;
-    color: #3e4c5b; }
-    @media (max-width: 991px) {
-      .footer-item {
-        margin-bottom: 25px; } }
-    @media (max-width: 576px) {
-      .footer-item {
-        text-align: center;
-        margin-bottom: 35px; } }
-    .footer-item .footer-logo {
-      margin: -20px 0 15px; }
-      @media (max-width: 991px) {
-        .footer-item .footer-logo {
-          text-align: center; } }
-    .footer-item .footer-title {
-      text-transform: uppercase;
-      font-weight: bold;
-      margin-bottom: 10px; }
-    .footer-item .footer-link {
-      color: #3e4c5b;
-      margin-bottom: 5px; }
-      .footer-item .footer-link:hover {
-        text-decoration: underline;
-        color: #3e4c5b; }
-      .footer-item .footer-link:last-child {
-        margin-bottom: 0; }
-    @media (max-width: 991px) {
-      .footer-item .description {
-        text-align: center; } }
-  @media (max-width: 991px) {
-    .footer-social {
-      justify-content: center; } }
-  .footer-social .instagram,
-  .footer-social .linkedin,
-  .footer-social .twitter {
-    width: 26px;
-    height: 26px;
-    background-size: 99px !important;
-    background-color: transparent;
-    -webkit-transition: background .2s;
-    transition: background-color .2s; }
-    .footer-social .instagram:hover,
-    .footer-social .linkedin:hover,
-    .footer-social .twitter:hover {
-      background-color: #9aa8b6; }
-  .footer-social .instagram {
-    background: url("../../images/photos/social-icon-dark.svg") 0 0 no-repeat; }
-  .footer-social .linkedin {
-    margin: 0 10px;
-    background: url("../../images/photos/social-icon-dark.svg") -35px 0 no-repeat; }
-  .footer-social .twitter {
-    background: url("../../images/photos/social-icon-dark.svg") -73px 0 no-repeat; }
+  padding: 55px 0 10px;
+  margin: 0 auto; }
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.33px;
+  color: #3e4c5b; }
+  .footer-item .footer-logo {
+    margin: -20px 0 15px; }
+  .footer-item .footer-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .footer-item .footer-link {
+    color: #3e4c5b;
+    margin-bottom: 5px; }
+    .footer-item .footer-link:hover {
+      text-decoration: underline;
+      color: #3e4c5b; }
+    .footer-item .footer-link:last-child {
+      margin-bottom: 0; }
+
+.footer-social .instagram,
+.footer-social .linkedin,
+.footer-social .twitter {
+  width: 27px;
+  height: 27px;
+  background-size: 90px !important; }
+
+.footer-social .instagram {
+  background: url("../../images/photos/social-icon-dark.svg") 0 0 no-repeat; }
+
+.footer-social .linkedin {
+  margin: 0 10px;
+  background: url("../../images/photos/social-icon-dark.svg") -30px 0 no-repeat; }
+
+.footer-social .twitter {
+  background: url("../../images/photos/social-icon-dark.svg") -63px 0 no-repeat; }
 
 .section-title {
   text-transform: uppercase;
@@ -358,9 +252,77 @@
   color: #3e4c5b; }
 
 .forest-xl-bg {
-  background: url("../../images/bg/forest-xl.png") center center repeat-x;
+  background: url("../../images/bg/forest-xl.jpg") center center repeat-x;
   background-size: contain;
-  height: 663px; }
+  height: 663px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .forest-xl-bg > * {
+    color: #fff;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: normal;
+    font-weight: bold; }
+
+.forest-s-bg {
+  background: url("../../images/bg/forest-s.png") center center repeat-x;
+  background-size: contain;
+  height: 240px; }
+
+.locations-section .location-description {
+  background-color: #7A7A7A;
+  padding: 20px; }
+  .locations-section .location-description .specs {
+    max-width: 600px;
+    width: 100%; }
+    .locations-section .location-description .specs .specs-title {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff; }
+    .locations-section .location-description .specs .search-box form {
+      display: flex; }
+    .locations-section .location-description .specs .search-box input {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 16px;
+      color: #fff;
+      background-color: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid #fff; }
+    .locations-section .location-description .specs .search-box input::placeholder {
+      color: #fff; }
+    .locations-section .location-description .specs .search-box button {
+      border: none;
+      background: url("../../images/photos/search-icon.svg") center center no-repeat;
+      width: 60px;
+      height: 35px; }
+    .locations-section .location-description .specs .sort-box .specs-actions button {
+      border: none;
+      background: transparent;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 18px;
+      color: #fff; }
+      .locations-section .location-description .specs .sort-box .specs-actions button .calendar {
+        content: '\f073';
+        font-family: FontAwesome;
+        font-size: 25px; }
+    .locations-section .location-description .specs .address-items {
+      padding: 0;
+      margin: 40px 0 0; }
+      .locations-section .location-description .specs .address-items .address-item {
+        position: relative;
+        padding: 15px 0 15px 40px;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 18px;
+        color: #fff;
+        border-bottom: 1px solid #fff; }
+        .locations-section .location-description .specs .address-items .address-item > span {
+          position: absolute;
+          left: 0;
+          top: 15px; }
 
 .video-section {
   padding: 125px 0 60px; }
@@ -569,6 +531,9 @@ ul {
 
 .mb-0 {
   margin-bottom: 0 !important; }
+
+.p-0 {
+  padding: 0 !important; }
 
 .pb-0 {
   padding-bottom: 0 !important; }

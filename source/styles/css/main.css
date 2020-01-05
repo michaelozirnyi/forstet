@@ -352,31 +352,34 @@
     background: url("../../images/photos/social-icon-dark.svg") -73px 0 no-repeat; }
 
 .section-title {
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-size: 50px;
-  font-weight: bold;
   color: #3e4c5b; }
 
 .forest-xl-bg {
   background: url("../../images/bg/forest-xl.jpg") center center repeat-x;
-  background-size: contain;
-  height: 663px;
+  background-size: cover;
+  height: 750px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center;
+  padding: 30px 15px; }
+  @media (max-width: 991px) {
+    .forest-xl-bg {
+      height: 550px; } }
+  @media (max-width: 767px) {
+    .forest-xl-bg {
+      height: auto;
+      min-height: 450px; } }
+  @media (max-width: 576px) {
+    .forest-xl-bg {
+      min-height: 300px; } }
   .forest-xl-bg > * {
-    color: #fff;
-    font-size: 85px;
+    color: #fff; }
+  .forest-xl-bg .large-title {
     text-transform: uppercase;
-    line-height: normal;
     font-weight: bold;
     font-family: "Roboto", sans-serif; }
-
-.forest-s-bg {
-  background: url("../../images/bg/forest-s.png") center center repeat-x;
-  background-size: contain;
-  height: 240px; }
 
 .locations-section .location-description {
   background-color: #747E88;
@@ -567,34 +570,34 @@
     top: -7px;
     left: 0; }
 
-.students-section {
+.partners-section {
   padding: 70px 0 140px; }
-  .students-section .section-title {
+  .partners-section .section-title {
     max-width: 530px;
     text-align: left;
     margin-bottom: 15px; }
-  .students-section .students-content {
+  .partners-section .students-content {
     max-width: 420px;
     font-family: "Nunito Sans", sans-serif;
     font-size: 22px;
     color: #9aa8b6;
     margin-bottom: 20px; }
-  .students-section .logo-items {
+  .partners-section .logo-items {
     padding: 0; }
-    .students-section .logo-items .logo-item img {
+    .partners-section .logo-items .logo-item img {
       width: 130px;
       height: 110px; }
-  .students-section .counter-box {
+  .partners-section .counter-box {
     padding: 80px 35px;
     border-radius: 4px;
     border: solid 4px #53f20e; }
-    .students-section .counter-box .count {
+    .partners-section .counter-box .count {
       font-family: "Roboto", sans-serif;
       font-size: 80px;
       font-weight: 300;
       text-align: center;
       color: #53f20e; }
-    .students-section .counter-box .counter-title {
+    .partners-section .counter-box .counter-title {
       font-family: "Roboto", sans-serif;
       font-size: 22px;
       font-weight: bold;
@@ -640,24 +643,34 @@ html {
     padding: 0;
     font-family: "Nunito Sans", sans-serif; }
 
-h1 {
+h1, .forest-xl-bg .large-title {
   font-size: 90px;
   line-height: 1;
   font-family: "Roboto", sans-serif;
   font-weight: 900; }
   @media (max-width: 991px) {
-    h1 {
+    h1, .forest-xl-bg .large-title {
       font-size: 70px; } }
   @media (max-width: 767px) {
-    h1 {
+    h1, .forest-xl-bg .large-title {
       font-size: 55px; } }
   @media (max-width: 575px) {
-    h1 {
+    h1, .forest-xl-bg .large-title {
       font-size: 40px; } }
 
-h2 {
+h2, .section-title {
   font-family: "Roboto", sans-serif;
-  font-weight: 900; }
+  font-weight: 900;
+  font-size: 50px; }
+  @media (max-width: 991px) {
+    h2, .section-title {
+      font-size: 40px; } }
+  @media (max-width: 767px) {
+    h2, .section-title {
+      font-size: 35px; } }
+  @media (max-width: 575px) {
+    h2, .section-title {
+      font-size: 28px; } }
 
 h3 {
   font-family: "Roboto", sans-serif;

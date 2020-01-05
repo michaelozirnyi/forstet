@@ -1,35 +1,40 @@
-@import "variables";
-
 .section-title {
-  font-family: $roboto;
+  @extend h2;
   text-transform: uppercase;
-  font-size: 50px;
-  font-weight: bold;
   color: $oxford-blue;
 }
 
 .forest-xl-bg {
   background: url("../../images/bg/forest-xl.jpg") center center repeat-x;
-  background-size: contain;
-  height: 663px;
+  background-size: cover;
+  height: 750px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 30px 15px;
+
+  @media (max-width: 991px) {
+    height: 550px;
+  }
+  @media (max-width: 767px) {
+    height: auto;
+    min-height: 450px;
+  }
+  @media (max-width: 576px) {
+    min-height: 300px;
+  }
 
   & > * {
     color: $white;
-    font-size: 85px;
+  }
+
+  .large-title {
+    @extend h1;
     text-transform: uppercase;
-    line-height: normal;
     font-weight: bold;
     font-family: $roboto;
   }
-}
-
-.forest-s-bg {
-  background: url("../../images/bg/forest-s.png") center center repeat-x;
-  background-size: contain;
-  height: 240px;
 }
 
 .locations-section {
@@ -314,7 +319,7 @@
   }
 }
 
-.students-section {
+.partners-section {
   padding: 70px 0 140px;
 
   .section-title {

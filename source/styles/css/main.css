@@ -352,6 +352,7 @@
     background: url("../../images/photos/social-icon-dark.svg") -73px 0 no-repeat; }
 
 .section-title {
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 50px;
   font-weight: bold;
@@ -366,10 +367,11 @@
   align-items: center; }
   .forest-xl-bg > * {
     color: #fff;
-    font-size: 100px;
+    font-size: 85px;
     text-transform: uppercase;
     line-height: normal;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: "Roboto", sans-serif; }
 
 .forest-s-bg {
   background: url("../../images/bg/forest-s.png") center center repeat-x;
@@ -377,7 +379,7 @@
   height: 240px; }
 
 .locations-section .location-description {
-  background-color: #7A7A7A;
+  background-color: #747E88;
   padding: 20px; }
   .locations-section .location-description .specs {
     max-width: 600px;
@@ -398,6 +400,8 @@
       border-left: none;
       border-right: none;
       border-bottom: 1px solid #fff; }
+    .locations-section .location-description .specs .search-box .input:focus {
+      outline: none; }
     .locations-section .location-description .specs .search-box input::placeholder {
       color: #fff; }
     .locations-section .location-description .specs .search-box button {
@@ -406,6 +410,7 @@
       width: 60px;
       height: 35px; }
     .locations-section .location-description .specs .sort-box .specs-actions button {
+      padding: 0;
       border: none;
       background: transparent;
       font-family: "Nunito Sans", sans-serif;
@@ -415,6 +420,8 @@
         content: '\f073';
         font-family: FontAwesome;
         font-size: 25px; }
+    .locations-section .location-description .specs .sort-box .specs-actions button:first-child {
+      margin-right: 20px; }
     .locations-section .location-description .specs .address-items {
       padding: 0;
       margin: 40px 0 0; }
@@ -422,13 +429,17 @@
         position: relative;
         padding: 15px 0 15px 40px;
         font-family: "Nunito Sans", sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         color: #fff;
         border-bottom: 1px solid #fff; }
         .locations-section .location-description .specs .address-items .address-item > span {
           position: absolute;
           left: 0;
-          top: 15px; }
+          top: 15px;
+          font-weight: bold; }
+      .locations-section .location-description .specs .address-items .address-item:hover {
+        color: #53f20e;
+        cursor: pointer; }
 
 .video-section {
   padding: 125px 0 60px; }
@@ -438,6 +449,7 @@
     .video-section .video-container .video-info {
       padding: 20px 0 65px; }
       .video-section .video-container .video-info .video-subtitle {
+        font-family: "Roboto", sans-serif;
         text-transform: uppercase;
         font-size: 14px;
         font-weight: bold;
@@ -460,6 +472,8 @@
         font-family: "Nunito Sans", sans-serif;
         font-size: 20px;
         font-weight: bold; }
+      .video-section .video-container .video-info .video-link:hover {
+        text-decoration: underline; }
       .video-section .video-container .video-info .video-link::before {
         content: '\f101';
         font-family: FontAwesome;
@@ -484,10 +498,18 @@
     margin-left: 20px;
     padding: 10px 0 25px 240px;
     border-bottom: 1px solid #D4D4D4; }
+    .accordion-section .accordion-container > span {
+      position: absolute;
+      left: -20px;
+      top: 15px;
+      color: #53f20e;
+      font-weight: bold;
+      font-size: 20px; }
     .accordion-section .accordion-container .question,
     .accordion-section .accordion-container .answer {
       max-width: 760px; }
     .accordion-section .accordion-container .question {
+      font-family: "Roboto", sans-serif;
       margin-bottom: 10px;
       font-size: 28px;
       font-weight: bold;
@@ -496,14 +518,24 @@
       font-family: "Nunito Sans", sans-serif;
       font-size: 18px;
       color: #9aa8b6; }
-  .accordion-section .accordion-container::before {
-    content: '01';
-    position: absolute;
-    left: -20px;
-    top: 15px;
-    color: #53f20e;
-    font-weight: bold;
-    font-size: 20px; }
+  .accordion-section .accordion .card {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #D4D4D4; }
+    .accordion-section .accordion .card .card-header {
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+      padding: 20px 0; }
+      .accordion-section .accordion .card .card-header .btn {
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        color: #53f20e; }
+    .accordion-section .accordion .card .card-body {
+      padding: 0; }
 
 .testimonials-section {
   padding: 50px 0 70px; }
@@ -557,11 +589,13 @@
     border-radius: 4px;
     border: solid 4px #53f20e; }
     .students-section .counter-box .count {
+      font-family: "Roboto", sans-serif;
       font-size: 80px;
       font-weight: 300;
       text-align: center;
       color: #53f20e; }
     .students-section .counter-box .counter-title {
+      font-family: "Roboto", sans-serif;
       font-size: 22px;
       font-weight: bold;
       text-align: center;
@@ -633,7 +667,8 @@ a:hover {
   text-decoration: none; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  margin: 0; }
 
 .mb-0 {
   margin-bottom: 0 !important; }

@@ -415,7 +415,8 @@
         border-left: none;
         border-right: none;
         border-bottom: 1px solid #fff;
-        width: 250px; }
+        width: 250px;
+        border-radius: 0; }
         .locations-section .location-description .specs .search-box input:focus {
           outline: none;
           border-color: #53f20e; }

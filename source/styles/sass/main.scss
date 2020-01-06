@@ -91,6 +91,51 @@ ul {
 
 
 
+.main-link {
+  text-transform: uppercase;
+  position: relative;
+  font-family: $nunito;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  line-height: 1;
+  color: $white;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+
+  i {
+    font-size: 40px;
+    margin-right: 10px;
+    line-height: 10px;
+    margin-top: -5px;
+  }
+
+  .text {
+    position: relative;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &:hover {
+    color: $bright-green;
+
+    .text:after {
+      background-color: $bright-green;
+    }
+  }
+}
+
 
 @media (min-width: 1200px) {
   .container,

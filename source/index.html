@@ -64,14 +64,14 @@
                 in Zusammenarbeit mit dem Bund Deutscher Forstleute und privaten Waldeigentümern eine Plattform für
                 Freiwillige.
             </div>
-            <a class="welcome-link" href="#">
+            <a class="main-link" href="#">
               <i class="fa fa-angle-double-right" aria-hidden="true"></i>
               <span class="text">
                 Erfahre mehr
               </span>
             </a>
         </div>
-        <div class="d-flex search-container">
+        <div class="d-flex search-container" id="infoBoxes">
             <ul class="d-flex points">
                 <li class="point">
                   <button>
@@ -95,71 +95,18 @@
 </section>
 
 <!-- Main -->
-<section class="locations-section container-fluid">
+<section class="locations-section container">
     <div class="row">
-        <div class="location-container col-lg-7 p-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4325424.60531306!2d10.030653340076718!3d50.98596187310556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1577953213027!5m2!1sen!2sua"
-                    width="100%"
-                    height="100%"
-                    frameborder="0"
-                    style="border:0;"
-                    allowfullscreen="">
-            </iframe>
-        </div>
-        <div class="location-description col-lg-5">
-            <div class="specs">
-                <div class="d-flex justify-content-between flex-wrap">
-                    <div class="search-box">
-                        <h4 class="specs-title">Actionstag suchen</h4>
-                        <form>
-                            <label for="site-search"></label>
-                            <input type="search"
-                                   id="site-search"
-                                   name="q"
-                                   placeholder="PLZ eingeben"
-                                   aria-label="Search through site content">
-                            <button></button>
-                        </form>
-                    </div>
-                    <div class="sort-box">
-                        <h4 class="specs-title">Sortieren</h4>
-                        <div class="specs-actions d-flex">
-                            <button class="d-flex flex-column">
-                                <span class="distance"></span>
-                                Entfernung
-                            </button>
-                            <button class="d-flex flex-column">
-                                <span class="calendar"></span>
-                                Datum
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <ul class="address-items">
-                    <li class="address-item">
-                        <span>A</span>
-                        <div class="d-flex flex-column">
-                            <b>82223 Eichenau (0,1 km entfernt)</b>
-                            <span>05. Marz 2020 um 11:00 Uhr, noch 22 Platze frei, 500 Baume</span>
-                        </div>
-                    </li>
-                    <li class="address-item">
-                        <span>B</span>
-                        <div class="d-flex flex-column">
-                            <b>82140 Olching (4,1 km entfernt)</b>
-                            <span>09. Marz 2020 um 15:00 Uhr, noch 9 Platze frei, 250 Baume</span>
-                        </div>
-                    </li>
-                    <li class="address-item">
-                        <span>C</span>
-                        <div class="d-flex flex-column">
-                            <b>82216 Maisach (7,2 km entfernt)</b>
-                            <span>16. Marz 2020 um 12:00 Uhr, noch 2 Platze frei, 120 Baume</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      <div class="col-12 text-center">
+        <img src="./images/photos/map.jpg" alt="" class="map-img">
+
+        <a class="main-link" href="./map.html#infoBoxes" target="_blank">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+          <span class="text text-center">
+            Click here to see all afforestation actions
+          </span>
+        </a>
+      </div>
     </div>
 </section>
 
@@ -245,87 +192,93 @@
             </div>
         </div>
 
-        <div class="accordion" id="accordionExample">
+        <div class="accordion" id="accordionFAQ">
             <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <button
-                            class="btn btn-link collapsed"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo">
-                        Du möchtest noch mehr erfahren?
-                    </button>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <div class="accordion-container">
-                            <span>04</span>
-                            <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
-                            <div class="answer">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua
-                            </div>
-                        </div>
-                        <div class="accordion-container">
-                            <span>05</span>
-                            <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
-                            <div class="answer">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua
-                            </div>
-                        </div>
-                        <div class="accordion-container">
-                            <span>06</span>
-                            <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
-                            <div class="answer">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua
-                            </div>
-                        </div>
-                        <div class="accordion-container">
-                            <span>07</span>
-                            <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
-                            <div class="answer">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua
-                            </div>
-                        </div>
-                        <div class="accordion-container">
-                            <span>08</span>
-                            <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
-                            <div class="answer">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua
-                            </div>
-                        </div>
-                        <div class="accordion-container">
-                            <span>09</span>
-                            <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
-                            <div class="answer">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua
-                            </div>
-                        </div>
-                        <div class="accordion-container">
-                            <span>10</span>
-                            <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
-                            <div class="answer">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua
-                            </div>
-                        </div>
-                        <div class="accordion-container">
-                            <span>11</span>
-                            <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
-                            <div class="answer">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <button
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+              >
+                <span class="top-helper"></span>
+                <span class="mid-helper"></span>
+                <span class="bot-helper"></span>
+
+                <span class="text-wrap">
+                  Du möchtest noch mehr erfahren?
+                </span>
+              </button>
+
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
+                  <div class="card-body">
+                      <div class="accordion-container">
+                          <span>04</span>
+                          <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
+                          <div class="answer">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                              labore et dolore magna aliquyam erat, sed diam voluptua
+                          </div>
+                      </div>
+                      <div class="accordion-container">
+                          <span>05</span>
+                          <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
+                          <div class="answer">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                              labore et dolore magna aliquyam erat, sed diam voluptua
+                          </div>
+                      </div>
+                      <div class="accordion-container">
+                          <span>06</span>
+                          <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
+                          <div class="answer">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                              labore et dolore magna aliquyam erat, sed diam voluptua
+                          </div>
+                      </div>
+                      <div class="accordion-container">
+                          <span>07</span>
+                          <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
+                          <div class="answer">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                              labore et dolore magna aliquyam erat, sed diam voluptua
+                          </div>
+                      </div>
+                      <div class="accordion-container">
+                          <span>08</span>
+                          <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
+                          <div class="answer">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                              labore et dolore magna aliquyam erat, sed diam voluptua
+                          </div>
+                      </div>
+                      <div class="accordion-container">
+                          <span>09</span>
+                          <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
+                          <div class="answer">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                              labore et dolore magna aliquyam erat, sed diam voluptua
+                          </div>
+                      </div>
+                      <div class="accordion-container">
+                          <span>10</span>
+                          <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
+                          <div class="answer">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                              labore et dolore magna aliquyam erat, sed diam voluptua
+                          </div>
+                      </div>
+                      <div class="accordion-container">
+                          <span>11</span>
+                          <div class="question">LOREM IPSUM DOLOR SIT AMET, CONSETETUR </div>
+                          <div class="answer">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                              labore et dolore magna aliquyam erat, sed diam voluptua
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
 
@@ -353,9 +306,7 @@
             <div class="swiper-slide">
               <img class="author-photo" src="images/photos/testimonials-photo.jpg" alt="Author">
               <div class="testimonial">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores et ea rebum. Stet clita kasd gubergren, no sea takima
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem dolores error eum expedita explicabo facere fuga incidunt nam nihil, nisi odio, perspiciatis possimus quis totam! Amet iste magnam nemo nobis reprehenderit. Alias aut deleniti eligendi est illum inventore omnis quibusdam repudiandae sapiente, vero. Ab accusamus ea explicabo ipsam ipsum neque praesentium tempore. A, sunt?
               </div>
               <div class="d-flex">
                 <div class="author d-flex flex-column">
@@ -396,7 +347,9 @@
             <div class="swiper-slide">
               <img class="author-photo" src="images/photos/testimonials-photo.jpg" alt="Author">
               <div class="testimonial">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem dolores error eum expedita explicabo facere fuga incidunt nam nihil, nisi odio, perspiciatis possimus quis totam! Amet iste magnam nemo nobis reprehenderit. Alias aut deleniti eligendi est illum inventore omnis quibusdam repudiandae sapiente, vero. Ab accusamus ea explicabo ipsam ipsum neque praesentium tempore. A, sunt?
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takima
               </div>
               <div class="d-flex">
                 <div class="author d-flex flex-column">
@@ -406,6 +359,11 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="swiper-controls testimonials-controls">
+          <span class="swiper-button-prev"></span>
+          <span class="swiper-button-next"></span>
         </div>
     </div>
 </section>

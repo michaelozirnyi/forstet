@@ -150,7 +150,7 @@
       }
     }
 
-    .welcome-link {
+    /*.welcome-link {
       text-transform: uppercase;
       position: relative;
       font-family: $nunito;
@@ -193,7 +193,7 @@
           background-color: $bright-green;
         }
       }
-    }
+    }*/
   }
 
   .navbar-collapse {
@@ -355,8 +355,7 @@
           outline: none;
 
           @media (max-width: 767px) {
-            bottom: -10px;
-            height: 10px;
+            display: none;
           }
         }
         

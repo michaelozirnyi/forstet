@@ -1,15 +1,15 @@
 .footer {
   background-color: $desert-storm;
-  padding: 305px 0 10px;
+  padding: 305px 0 30px;
   margin: 0 auto;
   position: relative;
 
   @media (max-width: 991px) {
-    padding: 265px 0 10px;
+    padding: 265px 0 30px;
   }
 
   @media (max-width: 767px) {
-    padding: 225px 0 10px;
+    padding: 225px 0 30px;
   }
 
   &:before {

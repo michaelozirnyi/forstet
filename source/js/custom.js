@@ -12,6 +12,10 @@ jQuery(function ($) {
     roundLengths: true,
     speed: 700,
     autoplay: false,
+    navigation: {
+      nextEl: '.testimonials-controls .swiper-button-next',
+      prevEl: '.testimonials-controls .swiper-button-prev'
+    },
     breakpoints: {
       767: {
         slidesPerView: 1,

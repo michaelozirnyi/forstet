@@ -82,14 +82,10 @@ ul {
   margin-bottom: 3rem!important;
 }
 
-.wrapper {
-  max-width: $wrapper-width;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
+.bg-gray {
+  background-color: $oxford-blue;
+  z-index: 1;
 }
-
-
 
 .main-link {
   text-transform: uppercase;

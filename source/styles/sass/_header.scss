@@ -16,6 +16,8 @@
   }
 
   .menu-items {
+    list-style: none;
+
     @media (max-width: 991px) {
       flex-wrap: wrap;
       justify-content: center;

@@ -12,10 +12,12 @@
       @media (max-width: 991px) {
         .header .logo img {
           height: 40px; } }
-  @media (max-width: 991px) {
-    .header .menu-items {
-      flex-wrap: wrap;
-      justify-content: center; } }
+  .header .menu-items {
+    list-style: none; }
+    @media (max-width: 991px) {
+      .header .menu-items {
+        flex-wrap: wrap;
+        justify-content: center; } }
   .header .menu-item {
     margin-right: 2px; }
     @media (max-width: 991px) {
@@ -1025,8 +1027,13 @@ ul {
 
 .page-title-simple {
   text-align: right;
-  padding: 40px 0; }
+  padding: 25px 0 0;
+  position: relative;
+  top: 15px; }
   @media (max-width: 991px) {
     .page-title-simple {
       text-align: center;
-      padding: 30px 0; } }
+      padding: 15px 0 0; } }
+  @media (max-width: 767px) {
+    .page-title-simple {
+      top: 7px; } }

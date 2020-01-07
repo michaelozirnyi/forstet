@@ -7,6 +7,11 @@
   .header .logo {
     position: relative;
     z-index: 1; }
+    .header .logo img {
+      max-height: 80px; }
+      @media (max-width: 991px) {
+        .header .logo img {
+          height: 40px; } }
   @media (max-width: 991px) {
     .header .menu-items {
       flex-wrap: wrap;
@@ -384,25 +389,30 @@
       height: 100%; }
   .locations-section .location-description {
     background-color: #747E88;
-    padding: 20px;
+    padding: 20px 0 0 20px;
     height: calc(100vh - 109px);
     height: -webkit-calc(100vh - 109px); }
     @media (max-width: 991px) {
       .locations-section .location-description {
-        height: calc(50vh - 55px);
-        height: -webkit-calc(50vh - 55px); } }
+        height: calc(50vh - 15px);
+        height: -webkit-calc(50vh - 15px);
+        padding: 20px 0 0 0; } }
     .locations-section .location-description .specs {
       width: 100%;
       max-width: 800px; }
       @media (max-width: 991px) {
         .locations-section .location-description .specs {
-          margin: 0 auto; } }
+          margin: 0 auto;
+          max-width: 100%; } }
       .locations-section .location-description .specs .specs-title {
         font-family: "Nunito Sans", sans-serif;
         font-size: 22px;
         font-weight: bold;
         color: #fff;
         margin-bottom: 15px; }
+        @media (max-width: 991px) {
+          .locations-section .location-description .specs .specs-title {
+            display: none; } }
       .locations-section .location-description .specs .search-box .autocomplete-wrap {
         display: flex;
         justify-content: center; }
@@ -443,64 +453,64 @@
       .locations-section .location-description .specs .sort-box .specs-actions button:first-child {
         margin-right: 20px; }
       .locations-section .location-description .specs .event-list {
-        padding: 0;
+        padding: 0 20px 0 0;
         margin: 40px 0 0;
-        max-height: calc(100vh - 109px - 80px - 76px);
-        max-height: -webkit-calc(100vh - 109px - 80px - 76px);
+        max-height: calc(100vh - 109px - 80px - 56px);
+        max-height: -webkit-calc(100vh - 109px - 80px - 56px);
         overflow: auto; }
         @media (max-width: 991px) {
           .locations-section .location-description .specs .event-list {
             margin: 20px 0 0;
-            height: calc(50vh - 55px - 60px - 76px);
-            height: -webkit-calc(50vh - 55px - 60px - 76px); } }
+            height: calc(50vh - 55px - 20px - 15px);
+            height: -webkit-calc(50vh - 55px - 20px - 15px);
+            padding: 0; } }
         .locations-section .location-description .specs .event-list .event-list__element {
           position: relative;
-          padding: 15px 40px 15px 40px;
+          padding: 15px 40px 15px 35px;
           font-family: "Nunito Sans", sans-serif;
           font-size: 16px;
           color: #fff;
-          border-bottom: 1px solid #fff; }
+          border-bottom: 1px solid #fff;
+          line-height: 1.25; }
           @media (max-width: 991px) {
             .locations-section .location-description .specs .event-list .event-list__element {
-              padding: 5px 40px 5px 40px;
-              font-size: 14px; } }
+              padding: 5px 55px 5px 40px;
+              font-size: 14px;
+              max-width: 800px;
+              margin: 0 auto; } }
           .locations-section .location-description .specs .event-list .event-list__element:first-letter {
             font-weight: bold; }
-          .locations-section .location-description .specs .event-list .event-list__element:after {
-            content: '\f124';
-            display: block;
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            top: 14px;
-            left: 10px;
-            font-family: FontAwesome;
-            font-size: 18px; }
-            @media (max-width: 991px) {
-              .locations-section .location-description .specs .event-list .event-list__element:after {
-                top: 3px; } }
+          .locations-section .location-description .specs .event-list .event-list__element .elem-id {
+            display: inline-block;
+            margin-left: -33px;
+            font-weight: bold;
+            width: 25px;
+            text-align: right;
+            margin-right: 5px; }
+          .locations-section .location-description .specs .event-list .event-list__element .location-title {
+            display: inline-block;
+            font-weight: bold; }
           .locations-section .location-description .specs .event-list .event-list__element .info-link {
             display: flex;
-            width: 25px;
-            height: 25px;
+            width: 32px;
+            height: 32px;
             position: absolute;
-            top: 14px;
+            top: 50%;
             left: auto;
-            right: 5px;
-            font-size: 18px;
+            right: 1px;
+            margin-top: -16px;
+            font-size: 19px;
             border-radius: 50%;
             border: 1px solid #f8f8f6;
             justify-content: center;
             align-items: center;
             color: #fff; }
+            @media (max-width: 991px) {
+              .locations-section .location-description .specs .event-list .event-list__element .info-link {
+                right: 16px; } }
             .locations-section .location-description .specs .event-list .event-list__element .info-link:hover {
               color: #53f20e;
               border-color: #53f20e; }
-          .locations-section .location-description .specs .event-list .event-list__element > span {
-            position: absolute;
-            left: 0;
-            top: 15px;
-            font-weight: bold; }
           .locations-section .location-description .specs .event-list .event-list__element:hover {
             color: #53f20e;
             cursor: pointer; }

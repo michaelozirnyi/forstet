@@ -5,6 +5,14 @@
   .logo {
     position: relative;
     z-index: 1;
+
+    img {
+      max-height: 80px;
+
+      @media (max-width: 991px) {
+        height: 40px;
+      }
+    }
   }
 
   .menu-items {

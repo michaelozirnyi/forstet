@@ -4,7 +4,7 @@
 
   .logo {
     position: relative;
-    z-index: 1;
+    z-index: 5;
 
     img {
       max-height: 80px;
@@ -114,7 +114,8 @@
       max-height: 100vh!important;
       opacity: 0;
       transition: .2s;
-      padding: 105px 15px 5px;
+      padding: 80px 15px 5px;
+      z-index: 4;
 
       &.show {
         opacity: 1!important;

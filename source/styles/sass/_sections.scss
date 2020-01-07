@@ -629,6 +629,7 @@
   .logo-items {
     padding: 0;
     align-items: center;
+    list-style: none;
 
     .logo-item img {
       width: 130px;
@@ -781,4 +782,17 @@
   blockquote.twitter-tweet a:focus {
     text-decoration: none;
   }
+}
+
+
+.content-section {
+  font-size: 18px;
+  color: $oxford-blue;
+  padding: 40px 0;
+
+
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
+
 }

@@ -47,14 +47,14 @@ h2 {
   }
   @media (max-width: 575px) {
     font-size: 28px;
-
   }
 }
 
-h3 {
+h3,
+h4,
+h5 {
   font-family: $roboto;
   font-weight: 900;
-
 }
 
 a:hover {
@@ -62,7 +62,7 @@ a:hover {
 }
 
 ul {
-  list-style: none;
+  //list-style: none;
   margin: 0;
 }
 
@@ -130,6 +130,20 @@ ul {
       background-color: $bright-green;
     }
   }
+
+  &-green {
+    color: $bright-green;
+
+    .text:after {
+      display: none!important;
+    }
+
+    &:hover {
+      .text {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 
@@ -140,5 +154,15 @@ ul {
   .container-sm,
   .container-xl {
     max-width: $wrapper-width!important;
+  }
+}
+
+.page-title-simple {
+  text-align: right;
+  padding: 40px 0;
+
+  @media (max-width: 991px) {
+    text-align: center;
+    padding: 30px 0;
   }
 }
